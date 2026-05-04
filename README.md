@@ -16,24 +16,24 @@
 
 ## Features
 
-### 🗝️ API key manager
+### API key manager
 View, rotate, and revoke your `pk_live_*` / `sk_live_*` keys — synced with `liqaa.io/console`.
 
-### 📋 OpenAPI explorer
+### OpenAPI explorer
 Browse the [LIQAA OpenAPI 3.1 spec](https://github.com/hartemyaakoub/liqaa-openapi) inside VS Code. Click any endpoint → get sample requests in your current file's language (TypeScript, PHP, Python, Go, etc.).
 
-### 🚀 Quick-action: "Add LIQAA to this project"
+### Quick-action: "Add LIQAA to this project"
 - Auto-detects your stack (Next.js / React / Vue / Vanilla / PHP / Python)
 - Inserts the `<script>` tag or `npm install` command
 - Adds a server-side token-exchange function in your existing handler
 
-### 🎥 Live room inspector
+### Live room inspector
 View active rooms, their participants, and end them — straight from the activity bar.
 
-### 🔔 Webhook tail
+### Webhook tail
 Stream webhook deliveries in the Output panel (`liqaa: Tail Webhooks`). Color-coded by event.
 
-### ⌨️ Snippets
+### Snippets
 Dozens of LIQAA-specific snippets:
 - `liqaa-init` — `LIQAA.init({ … })` skeleton
 - `liqaa-token-exchange-node` — server-side token exchange (Node.js)
@@ -55,7 +55,7 @@ code --install-extension liqaa.liqaa-vscode
 git clone https://github.com/hartemyaakoub/liqaa-vscode.git
 cd liqaa-vscode
 npm install
-npm run package    # produces .vsix
+npm run package # produces .vsix
 code --install-extension liqaa-vscode-1.0.0.vsix
 ```
 
@@ -65,10 +65,10 @@ Set in `.vscode/settings.json` (or User settings):
 
 ```json
 {
-  "liqaa.publicKey": "pk_live_…",
-  "liqaa.secretKey": "sk_live_…",
-  "liqaa.apiBase": "https://liqaa.io/api/public/v1",
-  "liqaa.tailWebhooks.eventFilter": ["call.started", "call.ended"]
+ "liqaa.publicKey": "pk_live_…",
+ "liqaa.secretKey": "sk_live_…",
+ "liqaa.apiBase": "https://liqaa.io/api/public/v1",
+ "liqaa.tailWebhooks.eventFilter": ["call.started", "call.ended"]
 }
 ```
 
